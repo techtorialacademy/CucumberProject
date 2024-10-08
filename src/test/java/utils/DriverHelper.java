@@ -30,6 +30,7 @@ public class DriverHelper {
             switch (ConfigReader.readProperty("browser")) {
 
                 case "chrome":
+                    System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
                    
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--headless");

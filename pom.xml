@@ -67,7 +67,7 @@
                     <include>**/WebOrderRunner.java</include>
                 </includes>
                 <systemPropertyVariables>
-                    cucumber.options="--plugin json:target/cucumber-reports/cucumber.json"
+                    <cucumber.options>--plugin json:target/cucumber-reports/cucumber.json</cucumber.options>
                 </systemPropertyVariables>
             </configuration>
         </plugin>
